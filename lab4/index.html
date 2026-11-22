@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 — Student card FORM</title>
+</head>
+<body>
+    <header>
+        <h1>Student card FORM</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li>
+                    <a href="../index.html#labs">Лабораторні роботи</a>
+                    <ol>
+                        <li><a href="../lab1/index.html">Lab1 - Створення статичної веб-сторінки «Картка студента»</a></li>
+                        <li><a href="../lab2/index.html">Lab2 - Створення меню сайту. Розміщення проекту в репозиторії GitHub</a></li>
+                        <li><a href="../lab3/index.html">Lab3 - Розробка веб-сторінки з графічними елементами та мультимедіа</a></li>
+                        <li><a href="index.html">Lab4 - Розробка веб-сторінки із формою «Анкета студента»</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Секція 1: Personal Information -->
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Provide your details</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" minlength="2" maxlength="60" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password" minlength="6" required>
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="16" max="100" required>
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </p>
+
+                    <p>
+                        Gender:<br>
+                        <input type="radio" id="gender-male" name="gender" value="male" required>
+                        <label for="gender-male">Male</label><br>
+
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">Female</label><br>
+
+                        <input type="radio" id="gender-other" name="gender" value="other">
+                        <label for="gender-other">Other</label>
+                    </p>
+
+                    <p>
+                        Languages Known:<br>
+                        <input type="checkbox" id="lang-english" name="languages[]" value="english">
+                        <label for="lang-english">English</label><br>
+
+                        <input type="checkbox" id="lang-spanish" name="languages[]" value="spanish">
+                        <label for="lang-spanish">Spanish</label><br>
+
+                        <input type="checkbox" id="lang-french" name="languages[]" value="french">
+                        <label for="lang-french">French</label>
+                    </p>
+
+                    <p>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="de">Germany</option>
+                            <option value="pl">Poland</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="us">United States</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+
+            <!-- Секція 2: College Subjects -->
+            <section id="college-subjects">
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Select your subjects</legend>
+
+                    <p>
+                        <label for="subjects">Choose subjects:</label><br>
+                        <select id="subjects" name="subjects[]" multiple size="5">
+                            <option value="mathematics">Mathematics</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="english">English</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cs-interest">Rate your interest in Computer Science:</label>
+                        <input type="range" id="cs-interest" name="cs_interest" min="0" max="10" value="5">
+                    </p>
+                </fieldset>
+            </section>
+
+            <!-- Секція 3: Skills Assessment -->
+            <section id="skills-assessment">
+                <h2>Skills Assessment</h2>
+                <fieldset>
+                    <legend>Assess your skills</legend>
+
+                    <p>
+                        <label for="skills">Describe your skills:</label><br>
+                        <textarea id="skills" name="skills" rows="5" cols="50" placeholder="List your skills here..."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="resume">Upload your resume:</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                    </p>
+
+                    <p>
+                        <label for="fav-color">Pick your favorite color:</label>
+                        <input type="color" id="fav-color" name="fav_color" value="#000000">
+                    </p>
+
+                    <p>
+                        <label for="study-time">Preferred study time:</label>
+                        <input type="time" id="study-time" name="study_time">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Submit Survey">
+                    </p>
+                </fieldset>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>Student card by Mykola Pekhnyk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
