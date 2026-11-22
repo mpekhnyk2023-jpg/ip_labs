@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 — Графічні елементи та мультимедіа</title>
+</head>
+<body>
+    <header>
+        <h1>ІТ коледж Львівської політехніки</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li>
+                    <a href="../index.html#labs">Лабораторні роботи</a>
+                    <ol>
+                        <li><a href="../lab1/index.html">Lab1 - Створення статичної веб-сторінки «Картка студента»</a></li>
+                        <li><a href="../lab2/index.html">Lab2 - Створення меню сайту. Розміщення проекту в репозиторії GitHub</a></li>
+                        <li><a href="index.html">Lab3 - Розробка веб-сторінки з графічними елементами та мультимедіа</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <!-- 4.5. Перша секція: логотип коледжу висотою 300px -->
+            <section id="logo">
+                <h2>Логотип навчального закладу</h2>
+                <img src="logo.png" alt="Логотип ІТ коледжу Львівської політехніки" height="300">
+            </section>
+
+            <!-- 4.6. Друга секція: опис та кнопка "Підписатися" -->
+            <section id="about-channel">
+                <h2>Про офіційний канал коледжу</h2>
+                <p><strong>@itcollegelviv</strong> &bull; ВСП «Фаховий коледж інформаційних технологій Національного університету «Львівська політехніка» (LITTERIS ET ARTIBUS).</p>
+                <p>Офіційний YouTube-канал ІТ коледжу Львівської політехніки: освітні програми, подкасти для абітурієнтів, студентське життя та новини спеціальностей.</p>
+                <a href="https://www.youtube.com/@itcollegelviv?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+                    <button type="button">Підписатися</button>
+                </a>
+            </section>
+
+            <!-- 4.7. Третя секція: відео video.mp4 (висота 540px, ширина 80%) -->
+            <section id="local-video">
+                <h2>Відеопрезентація коледжу</h2>
+                <video controls height="540" style="width: 80%;">
+                    <source src="video.mp4" type="video/mp4">
+                    Ваш браузер не підтримує тег video. Завантажте <a href="video.mp4">відеофайл MP4</a>.
+                </video>
+            </section>
+
+            <!-- 4.8. Четверта секція: аудіофайл -->
+            <section id="local-audio">
+                <h2>Аудіоподкаст коледжу</h2>
+                <audio controls>
+                    <source src="videoplayback.m4a" type="audio/mp4">
+                    Ваш браузер не підтримує тег audio. Завантажте <a href="videoplayback.m4a">аудіофайл</a>.
+                </audio>
+            </section>
+
+            <!-- 4.9. П'ята секція: YouTube відео через iframe -->
+            <section id="youtube-stream">
+                <h2>Трансляція про навчання в коледжі (YouTube)</h2>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/kveftfh9GVs?si=FvcKXkIBjpxRimtp"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- 4.10. Шоста секція: власна Google Карта через iframe -->
+            <section id="google-map">
+                <h2>Інтерактивна карта Львова (Мої карти Google)</h2>
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=16obBvT8c_q5g-OJGRCJ6BlHn8vlSkHI&ehbc=2E312F"
+                    width="640"
+                    height="480"
+                    loading="lazy">
+                </iframe>
+            </section>
+        </article>
+
+        <!-- 4.11. Блок aside: список із 5 прев'ю зображень до відео із заголовками у посиланнях -->
+        <aside>
+            <h2>Спеціальності та освітні програми</h2>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/@itcollegelviv/videos" target="_blank" rel="noopener noreferrer">
+                        <img src="thumb1.png" alt="Вивчай спеціальність майбутнього" width="240" height="135"><br>
+                        <span>Вивчай спеціальність майбутнього... (0:35)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@itcollegelviv/videos" target="_blank" rel="noopener noreferrer">
+                        <img src="thumb2.png" alt="122 Комп'ютерні науки" width="240" height="135"><br>
+                        <span>122 Комп'ютерні науки. Computer Science. Вступ у ІТ... (0:28)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@itcollegelviv/videos" target="_blank" rel="noopener noreferrer">
+                        <img src="thumb3.png" alt="172 Телекомунікації та радіотехніка" width="240" height="135"><br>
+                        <span>172 Телекомунікації та радіотехніка —... (0:31)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@itcollegelviv/videos" target="_blank" rel="noopener noreferrer">
+                        <img src="thumb4.png" alt="172 Телекомунікації та радіотехніка — Інжиніринг" width="240" height="135"><br>
+                        <span>172 Телекомунікації та радіотехніка — Інжиніринг та... (0:31)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@itcollegelviv/videos" target="_blank" rel="noopener noreferrer">
+                        <img src="thumb5.png" alt="029 Інформаційна, бібліотечна та архівна справа" width="240" height="135"><br>
+                        <span>029 Інформаційна, бібліотечна та архівна справа (0:33)</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright 2026 by Mykola Pekhnyk. All rights reversed.</p>
+    </footer>
+</body>
+</html>
